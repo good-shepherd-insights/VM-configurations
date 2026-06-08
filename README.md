@@ -7,6 +7,7 @@ AI tools installation and configuration reference for VM provisioning.
 ```
 .
 ├── README.md                          # This file
+├── keys.env.example                   # Single keys file — copy to keys.env, fill in values
 ├── install-plan.md                    # Full install script and instructions for all tools
 ├── configs/
 │   ├── claude-code/
@@ -63,11 +64,29 @@ AI tools installation and configuration reference for VM provisioning.
 
 ## Quick Start
 
-See [install-plan.md](install-plan.md) for detailed per-tool instructions, or run:
+1. Copy the keys template and fill in your values:
+   ```bash
+   cp keys.env.example keys.env
+   chmod 600 keys.env
+   # Edit keys.env — only fill in keys for tools you use
+   ```
 
-```bash
-bash scripts/install-all.sh
-```
+2. Run the install script (installs tools + auto-configures from keys.env):
+   ```bash
+   bash scripts/install-all.sh
+   ```
+
+3. Or install specific tools only:
+   ```bash
+   bash scripts/install-all.sh claude ollama hermes
+   ```
+
+4. Or re-run just the configuration (no installs):
+   ```bash
+   bash scripts/install-all.sh configure
+   ```
+
+See [install-plan.md](install-plan.md) for detailed per-tool instructions.
 
 ## Security Note
 
