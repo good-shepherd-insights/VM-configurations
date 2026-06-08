@@ -1,0 +1,19 @@
+{
+  "claude-code": "2.1.150",
+  "codex": "0.133.0",
+  "copilot": "1.0.54",
+  "gemini": "0.43.0",
+  "ollama": "0.24.0",
+  "fcc": "2.0.0",
+  "kimi": "1.44.0",
+  "opencode": "1.15.12",
+  "cursor-agent": "2026.05.24-dda726e",
+  "multica": "0.3.6",
+  "onecli-server": "1.23.0",
+  "onecli-cli": "2.2.0",
+  "nanoclaw": "2.0.70",
+  "hermes": "0.15.1",
+  "node": "24.16.0",
+  "pnpm": "10.33.0",
+  "ollama-models": ["glm-5.1:cloud"]
+}

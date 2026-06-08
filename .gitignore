@@ -1,0 +1,20 @@
+# Secrets — never commit real credentials
+.env
+*.key
+*.pem
+credentials/
+oauth_creds.json
+
+# State/session data
+sessions/
+history/
+logs/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.log
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
