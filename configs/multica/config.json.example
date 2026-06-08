@@ -1,0 +1,6 @@
+{
+  "server_url": "https://api.multica.ai",
+  "app_url": "https://multica.ai",
+  "workspace_id": "<YOUR_WORKSPACE_ID>",
+  "token": "<YOUR_MULTICA_TOKEN>"
+}

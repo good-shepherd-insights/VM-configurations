@@ -1,0 +1,9 @@
+# ~/.config/claude/config.toml
+
+[anthropic]
+base_url = "http://localhost:11434"
+api_key = ""          # Ollama ignores it; leave blank or any value
+auth_token = "ollama" # required non-empty string
+
+[model_defaults]
+model = "glm-5.1:cloud"

@@ -1,0 +1,16 @@
+model = "glm-5.1:cloud"
+model_provider = "ollama-cloud"
+
+[model_providers.ollama-cloud]
+name = "Ollama Cloud"
+base_url = "http://localhost:11434/v1"
+wire_api = "responses"
+
+[projects."/home/<user>"]
+trust_level = "trusted"
+
+[projects."/home/<user>/nanoclaw-v2"]
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
